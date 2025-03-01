@@ -1,29 +1,10 @@
-@primary-color: #1890ff;
-@secondary-color: #eee;
-@text-color: #333;
+@import "variables.less";
+@import "global.less";
 
-header{
-    background-color: @primary-color;
-    color: @secondary-color;
-    font-size: 1rem;
-    padding: 0.25rem 0.5rem;
-    nav{
-        ul{
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        li{
-            margin-right: 1rem;
-            a{
-                color: @secondary-color;
-                text-decoration: none;
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-    
-}
+/*Utilitarios*/
+@import "utilities.less";
+@import "grid.less";
+
+/*Componentes*/
+@import "header.less";
+@import "hero.less";

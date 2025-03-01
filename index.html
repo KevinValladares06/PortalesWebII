@@ -1,114 +1,60 @@
 <!doctype html>
-
-
-<html lang="es">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Encanto de las Suculentas</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background-color: #f9f5f2;
-      color: #333;
-    }
-
-    nav {
-      background-color: #4caf50;
-      padding: 15px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .hero {
-      text-align: center;
-      background: url('https://placehold.co/1200x500') no-repeat center/cover;
-      padding: 100px 20px;
-      color: white;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 20px auto;
-      text-align: center;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portales Web 2 Sábados</title>
+  <link rel="stylesheet" href="less/main.less" />
 </head>
 
 <body>
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#galeria">Galería</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-  <div class="hero">
-    <h1>Descubre la Belleza de las Suculentas</h1>
-  </div>
-  <div class="container" id="galeria">
-    <h2>Nuestra Galería</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://placehold.co/600x400" alt="Suculenta 1">
-        <p>Hermosa suculenta de colores vibrantes.</p>
-      </div>
-      <div class="card">
-        <img src="https://placehold.co/600x400" alt="Suculenta 2">
-        <p>Una opción perfecta para tu jardín.</p>
-      </div>
-      <div class="card">
-        <img src="https://placehold.co/600x400" alt="Suculenta 3">
-        <p>Fácil de cuidar y llena de vida.</p>
-      </div>
+  <header>
+    <div>
+      <img src="https://picsum.photos/id/189/64/64" alt="Logo" />
+      <h1>Inversiones ABC</h1>
     </div>
-  </div>
-  <footer>
-    <p>&copy; 2025 Encanto de las Suculentas | Todos los derechos reservados</p>
-  </footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html/aula1.html">Aula 1</a></li>
+        <li><a href="html/aula2.html">Aula 2</a></li>
+        <li><a href="html/aula3.html">Aula 3</a></li>
+        <li><a href="html/aula4.html">Aula 4</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="heroContainer">
+      <picture>
+        <source srcset="https://picsum.photos/id/100/1300/990" media="(min-witdh:1025px)">
+        <source srcset="https://picsum.photos/id/100/1024/640" media="(min-witdh:768px)">
+        <img src="https://picsum.photos/id/100/480/480" alt="">
+      </picture>
+      <div class="center">
+        <h2>Inversiones ABC</h2>
+        <p>Todo lo necesario para Iniciar tu Emprendimiento.</p>
+      </div>
+    </section>
+    <div class="container">
+      <section class="grid">
+        <div class="row">
+          <div class="col-1 offset-1">
+            Col 1
+          </div>
+          <div class="col-3">
+            Col 3
+          </div>
+          <div class="col-2">
+            Col 2
+          </div>
+          <div class="col-6">
+            Col 6
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 </body>
 
 </html>
