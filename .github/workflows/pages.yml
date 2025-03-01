@@ -35,7 +35,7 @@ jobs:
       - name: Copilar el Sitio
         run: npm run build
       - name: Configurar entorno Github Pages
-        uses: action/configure-pages@v5
+        uses: actions/configure-pages@v5
       - name: Upload del sitio compilado
         uses: actions/upload-pages-artifact@v3
         with:
